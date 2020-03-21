@@ -1,5 +1,7 @@
 {
   "name": "Formulario",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { AlertController } from '@ionic/angular';
+import {MyServiceService} from '../services/my-service.service';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
-  constructor() {}
-
+  constructor(public alertController: AlertController, public myService: MyServiceService) {}
 }
