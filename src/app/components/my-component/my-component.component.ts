@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MyServiceService} from '../../services/my-service.service';
 
 @Component({
   selector: 'app-my-component',
@@ -7,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyComponentComponent implements OnInit {
 
-  constructor() { }
+  constructor(public myService: MyServiceService) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    // tslint:disable-next-line: no-unused-expression
+    this.myService.arrPersonas;
+  }
 
 }
